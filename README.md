@@ -94,6 +94,7 @@ TOP=SOMEWHERE/rl-testbed-for-energyplus
 export PYTHONPATH=${PYTHONPATH}:${TOP}
 MODEL_DIR="${TOP}/EnergyPlus/Model"
 
+# if [ `uname` = "Darwin" ]; then  #In `$(HOME)/.zshrc`
 if [ `uname` == "Darwin" ]; then
 	energyplus_instdir="/Applications"
 else
